@@ -21,7 +21,6 @@ public class SenderQueue {
 	private static final int SEND_NUMBER = 5;
 
 	public static void main(String[] args) {
-
 		// ConnectionFactory ：连接工厂，JMS 用它创建连接
 		ConnectionFactory connectionFactory;
 		// Connection ：JMS 客户端到JMS Provider 的连接
