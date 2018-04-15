@@ -1,0 +1,65 @@
+*{margin: 0;padding: 0;}
+a{text-decoration: none;}
+li{list-style: none;}
+a:hover{text-decoration: none;}
+.Yahei{font-family: "Microsoft Yahei", "Hiragino Sans GB", "Helvetica Neue", Helvetica, tahoma, arial, Verdana, sans-serif, "WenQuanYi Micro Hei", "\5B8B\4F53"}
+/*页面头样式*/
+div.header{ width: 100%; height: 60px; background-color:#0d5f92; line-height: 60px; color: white; font-size: 25px;}
+div.header img{width:40px;height:40px;margin-right: 15px;}
+/*导航的样式*/
+div.nav>div.row{margin-top: 30px;}
+hr{border: 1px solid gainsboro;}
+div.col-xs-10 h3{margin-top: 0px;display: inline;}
+div.col-xs-4{margin-bottom: 20px;}
+div.col-xs-6{margin-bottom: 15px;}
+div.col-xs-18{margin-bottom: 20px;}
+/* 注销样式 */
+div.logout a{
+	float: right;
+    margin-right: 20px;
+    font-size: 10pt;
+    font-weight: bold;
+    color: white;
+/*     text-decoration: underline; */
+}
+/*添加参数的样式*/
+/* .paramTable,.editTable,.addurlTable,.editurlTable{display: none;} */
+div.validate{margin-top: 50px;}
+ .container {  width: 1500px;}  
+ 
+/*分页*/
+div.page{  float: right;  }
+div.page a{  padding: 5px 10px;  border: 1px solid gainsboro;  }
+div.page a:hover{ background-color: #5298D5; color: white; }
+div.page a.on{border: none;}
+a:link{text-decoration:none;}
+a:visited{text-decoration: none;}
+
+/*一键请求的*/
+/*div.request{
+    float: right;
+    margin-right: 40px;
+    color: red;
+    font-size: 14px;
+    cursor:pointer;
+}
+div.question{
+	height:60px;
+	overflow-y:auto; 
+}*/
+div.Request div.col-xs-12{font-size: 14px;margin-bottom: 15px;}
+div.Request div.col-xs-12 label{padding: 0;width: 75px;}
+div.Request div.col-xs-12 .form-control{width: 80%;}
+
+.centerY{
+	text-align: center;
+	display:block;
+	padding-bottom: 15px;
+	font-weight: 700;
+    font-size: 15px;
+    
+}
+.centerY label{
+	font-weight: 500;
+}
+
