@@ -18,6 +18,11 @@ public class JDK8NewFeatures {
 
 		LambdaExpression();
 
+
+		System.out.println();
+
+
+
 	}
 
 	// lambda表达式
@@ -70,5 +75,9 @@ public class JDK8NewFeatures {
 		System.out.println("sum is:" + nums.stream().filter(num -> num != null).distinct().mapToInt(num -> num * 2)
 				.peek(System.out::println).skip(2).limit(4).sum());
 	}
+
+
+
+
 
 }
