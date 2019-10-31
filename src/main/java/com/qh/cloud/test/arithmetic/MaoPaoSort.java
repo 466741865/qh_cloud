@@ -10,7 +10,7 @@ public class MaoPaoSort {
 
 	public static void main(String[] args) {
 
-		System.out.println("==========冒泡=============");
+		System.out.println("==========冒泡，写法1=============");
 		Integer[] numbers = { 22, 12, 88, 35, 64, 28, 50, 6 };
 		print(numbers, "排序前");
 		// 冒泡
@@ -19,6 +19,14 @@ public class MaoPaoSort {
 		// Arrays.sort(numbers);
 		print(numbers, "排序后");
 
+
+
+		System.out.println("==========冒泡，写法2=============");
+		Integer[] numbers1 = { 22, 12, 88, 35, 64, 28, 50, 6 };
+//		Integer[] numbers1 = {1,2,3,4,5,6,6,6};
+		print(numbers1, "排序前");
+		bubbleSort(numbers1);
+		print(numbers1, "排序后");
 	}
 
 	/**
@@ -26,7 +34,7 @@ public class MaoPaoSort {
 	 */
 	public static void print(Integer[] ints, String describe) {
 
-		System.out.println("这是  " + describe + "  的数组");
+		System.out.print("这是  " + describe + "  的数组:");
 		System.out.print("[ ");
 		for (int i : ints) {
 			System.out.print(i + ",");
@@ -35,8 +43,39 @@ public class MaoPaoSort {
 		System.out.println();
 	}
 
+
 	/**
-	 * @Description 冒泡排序
+	 * 冒泡排序 写法2 ，，无调整则提前结束循环
+ 	 * @param ints
+	 */
+	public static void bubbleSort(Integer[] ints){
+
+		int intsSize = ints.length;
+		if(intsSize <= 1){
+			return;
+		}
+
+		for (int i = 0; i < intsSize ; i++){
+			boolean flag = false;
+			for(int j = 0 ; j < intsSize - i - 1 ; j++){
+				if(ints[j] > ints[j + 1]){
+					int tmp = ints[j];
+					ints[j] = ints[j + 1];
+					ints[j + 1] = tmp;
+					flag = true;
+				}
+
+			}
+			if(!flag){
+				break;
+			}
+			print(ints, "排序中" + i);
+		}
+	}
+
+
+	/**
+	 * @Description 冒泡排序 写法1
 	 */
 	public static void bubblingSort(Integer[] ints) {
 		int temp = 0;
